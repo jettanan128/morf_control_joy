@@ -196,3 +196,5 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+add_executable(morf_teleop_joy src/morf_teleop_joy.cpp)
+target_link_libraries(morf_teleop_joy ${catkin_LIBRARIES})
